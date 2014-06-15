@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  background: #F8F8F8;
+  font-family: Ubuntu, georgia;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.4em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.controls {
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(white, #F9F9F9);
+  background: #494;
+  box-shadow: 0 0 5px #BBB;
+  opacity: 0.9;
+  color: #F0F0F0;
+  z-index: 1;
+}
+
+.control {
+  position: absolute;
+  top: 10px;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.title {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 19px;
+}
+
+.chapter {
+  padding: 50px 0;
+  background: white;
+  box-shadow: 0 0 4px #DDD;
+}
+
+.animated {
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    -ms-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+

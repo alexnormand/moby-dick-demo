@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title=title
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="css/style.css")
+  body
+    div#main
+      div.controls.cf
+        if (prev)
+          div.control#prev
+              a(href="#{prev}.html")
+                |< previous chapter
+        if (next)
+          div.control#next
+              a(href="#{next}.html")
+                |next chapter >
+        div.container
+          h1.title=title
+
+      div.chapter.cf.container!=content
+
+      script(src='js/main.js')
+
